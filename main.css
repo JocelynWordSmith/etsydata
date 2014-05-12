@@ -1,0 +1,12 @@
+.box {
+	height: 135px;
+	width: 175px;
+	float: left;
+	color: white;
+	margin: 4px;
+}
+
+.sort-by-views, .sort-by-title {
+	border: 1px solid black;
+	cursor: pointer;
+}
