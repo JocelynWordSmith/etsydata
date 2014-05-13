@@ -1,5 +1,10 @@
-.sidebar{
 
+.sidebar{
+	
+	background-color: white;
+	text-align: center;
+	padding-left: 40%;
+	border: 1px solid black;
 }
 
 .box {
