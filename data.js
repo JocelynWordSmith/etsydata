@@ -3268,7 +3268,7 @@
 	 	items.forEach(function(item) {
 	  		$('.container').append('<div style="background: url(' + item.Images[0].url_170x135 + ') " class="box">' + item.views + '</div>')
 		});
-	})
+	});
 
 
 
@@ -3282,7 +3282,39 @@
 	 	items.forEach(function(item) {
 	  		$('.container').append('<div style="background: url(' + item.Images[0].url_170x135 + ') " class="box">' + item.title + '</div>')
 		});
-	})
+	});
+
+	$('.show-comics').click(function(){
+		$('.container').empty();
+
+		items.filter(function(x){
+				return x.category_path[1] === "Book";
+			
+		}).forEach(function(item) {
+	  		$('.container').append('<div style="background: url(' + item.Images[0].url_170x135 + ') " class="box">' + item.title + '</div>')
+		});
+
+		
+	});
+
+	$('.show-clothes').click(function(){
+		$('.container').empty();
+
+		items.filter(function(x){
+				return x.category_path[0] === "Clothing" || x.category_path[1] === "Clothing";
+			
+		}).forEach(function(item) {
+	  		$('.container').append('<div style="background: url(' + item.Images[0].url_170x135 + ') " class="box">' + item.title + '</div>')
+		});	
+	});
+			
+		
+	
+
+			
+
+
+
 
 
 

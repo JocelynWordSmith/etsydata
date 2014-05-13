@@ -1,3 +1,7 @@
+.sidebar{
+
+}
+
 .box {
 	height: 135px;
 	width: 175px;
@@ -6,7 +10,10 @@
 	margin: 4px;
 }
 
-.sort-by-views, .sort-by-title {
+.sort-by-views, .sort-by-title, .show-comics, .show-clothes {
 	border: 1px solid black;
 	cursor: pointer;
+	width: 175px;
+
+	text-align: center;
 }
